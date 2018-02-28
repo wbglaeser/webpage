@@ -1,0 +1,6 @@
+workpage.egg-info/PKG-INFO
+workpage.egg-info/SOURCES.txt
+workpage.egg-info/dependency_links.txt
+workpage.egg-info/entry_points.txt
+workpage.egg-info/requires.txt
+workpage.egg-info/top_level.txt

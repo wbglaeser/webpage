@@ -1,0 +1,8 @@
+pyramid
+waitress
+pyramid_chameleon
+SQLAlchemy
+transaction
+zope.sqlalchemy
+psycopg2
+bcrypt

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <!--Title-->
+    <title>WBG</title>
+    <link rel="stylesheet"
+          href="${request.static_url('workpage:static/css/coming_shortly.css') }"/>
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="shade">
+            <div class="link-box">
+
+                <!--  PYRAMID CODE -->
+                Website coming shortly. Until then, return<a href="/home">home</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

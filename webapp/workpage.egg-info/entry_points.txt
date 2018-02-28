@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = workpage:main
+      [console_scripts]
+      initialize_workpage_db = workpage.initialize_db:main
+      

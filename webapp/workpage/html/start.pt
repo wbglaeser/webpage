@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <!--Title-->
+    <title>WBG</title>
+    <link rel="stylesheet"
+          href="${request.static_url('workpage:static/css/start.css') }"/>
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="shade">
+            <div class="link-box">
+
+                <!--  PYRAMID CODE -->
+                Welcome to the 
+                <a href="/home">website</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

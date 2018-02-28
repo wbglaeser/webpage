@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <!--Title-->
+    <title>WBG</title>
+
+    <!--CSS-->
+    <link rel="stylesheet"
+          href="${request.static_url('workpage:static/css/home.css') }"/>
+
+    <!--JS-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Top Navigation Bar-->
+    <div class="topnav" id="myTopnav">
+        <a id="main" href="/home">home</a>
+        <a id="projects" href="/coming_shortly">projects</a>
+        <a id="about" href="/coming_shortly">about</a>
+        <a id="cv" href="/coming_shortly">cv</a>
+
+    </div>
+
+    <!--Main-->
+    <section class="main">
+
+        <!--Background-Box-->
+        <div class="background-box" id="CentreBox"></div>
+
+        <!--Circle1-->
+        <div class="project-box" id="box-1">
+        
+            <svg class="graph" id="visualisation-1" width="500" height="300" style="border-style: solid;
+    border-width: 2px;"></svg> 
+
+        </div>
+        <!--Circle2-->
+        <div class="project-box" id="box-2">
+        
+            <svg class="graph" id="visualisation-2" width="500" height="300" style="border-style: solid;
+    border-width: 2px;"></svg>
+
+        </div>
+
+        <!--Circle3-->
+        <div class="project-box" id="box-3">
+        
+            <svg class="graph" id="visualisation-3" width="500" height="300" style="border-style: solid;
+    border-width: 2px;"></svg>
+
+        </div>
+       
+    </section>
+
+    <div>
+            <a tal:condition="view.logged_in is None"
+                href="${request.application_url}/login">Log In</a>
+            <a tal:condition="view.logged_in is not None"
+                href="${request.application_url}/logout">Logout</a>
+    </div>
+
+
+<script src="${request.static_url('workpage:static/js/bar_chart.js') }"></script>
+<script src="${request.static_url('workpage:static/js/trace_game.js') }"></script>
+<script src="${request.static_url('workpage:static/js/simple_bubble_chart.js') }"></script>
+
+</body>
+</html>

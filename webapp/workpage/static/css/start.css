@@ -1,0 +1,44 @@
+html{
+    background: url(../images/snowdonia.jpeg) no-repeat center center fixed transparent;    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+}
+
+/* Background shade */
+
+.shade{
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    height: 97vh;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    animation: fadein 2s;
+}
+
+@keyframes fadein{
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+
+.link-box{
+    display:flex;
+    background:rgba(255,255,255,0.0);
+    height: 50vh;
+    width: 50vw;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+#home-button{
+    color: black;
+    text-decoration: none;
+    font-size: 64px;
+    padding: 5vh 5vh 2vh 5vh;
+}

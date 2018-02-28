@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <!--Title-->
+    <title>WBG</title>
+
+</head>
+
+<body>
+
+<p>${data}</p>
+
+</body>
+</html>

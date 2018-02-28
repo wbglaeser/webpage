@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <!--Title-->
+    <title>WBG</title>
+
+    <!--CSS-->
+    <link rel="stylesheet"
+          href="${request.static_url('workpage:static/css/data_entry.css') }"/>
+
+    <!--JS-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Top Navigation Bar-->
+    <div class="topnav" id="myTopnav">
+        <a id="main" href="/home">home</a>
+        <a id="projects" href="/coming_shortly">projects</a>
+        <a id="about" href="/coming_shortly">about</a>
+        <a id="cv" href="/coming_shortly">cv</a>
+        <a id="cv" href="/data_entry">cv</a>
+    </div>
+
+    <!--Main-->
+    <section class="main">
+
+        <!--Background-Box-->
+        <div class="background-box" id="CentreBox"></div>
+
+        <!--Circle1-->
+        <div class="project-box" id="box-1"></div>
+        
+        <!--Circle1-->
+        <div class="text-box" id="box-1">${tweet}
+        
+            <form action="/data_entry" method="get"><br>
+                <input type="submit" name="form_submitted" value="Positive"><br>
+                <input type="submit" name="form_submitted" value="Negative"><br>
+                <input type="submit" name="form_submitted" value="Neutral">
+            </form> 
+        
+        </div>
+
+               
+    </section>
+
+</body>
+</html>

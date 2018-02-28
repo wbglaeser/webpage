@@ -1,0 +1,42 @@
+{
+  "Name": "Eve",
+  "Count":10,
+  "children": [
+    {
+      "Name": "Cain",
+      "Count":70
+    },
+    {
+      "Name": "Seth",
+      "Count":30,
+      "children": [
+        {
+          "Name": "Enos",
+          "Count":25
+        },
+        {
+          "Name": "Noam",
+          "Count":50
+        }
+      ]
+    },
+    {
+      "Name": "Abel",
+      "Count":17
+    },
+    {
+      "Name": "Awan",
+      "Count":5,
+      "children": [
+        {
+          "Name": "Enoch",
+          "Count":10
+        }
+      ]
+    },
+    {
+      "Name": "Azura",
+      "Count":50
+    }
+  ]
+}
