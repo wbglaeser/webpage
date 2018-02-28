@@ -57,30 +57,6 @@ class ComingShortlyView:
     def hello(self):
         return {'name': 'Hello View'}
 
-@view_defaults(renderer='html/data_entry.pt')
-class DataEntryView:
-    def __init__(self, request):
-        self.request = request
-
-    @view_config(route_name='data_entry')
-    def show_data(self):
-        request = self.request
-        data = DBSession.query(Tweets).all()
-        values = {
-            'tweet':DBSession.query(Tweets).filter(Tweets.id == 1).update({Tweets.label: 1}),
-            # 'tokens': data.tokens,
-        }
-        if 'form_submitted' in request.params:
-            if request.params['form_submitted'] == 'Positive':
-                DBSession.query(Tweets).filter_by(id = 2).update({Tweets.label: 1})
-            elif request.params['form_submitted'] == 'Neutral':
-                DBSession.query(Tweets).filter_by(id = 2).update({Tweets.label: 2})
-            else:
-                DBSession.query(Tweets).filter_by(id = 2 ).update({Tweets.label: 0})
-            DBSession.flush()
-        return values
-
-
 
 
 
