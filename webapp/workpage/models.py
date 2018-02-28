@@ -38,17 +38,6 @@ class SomeData_2(Base):
     x_data = Column(Integer, unique=True)
     y_data = Column(Integer)
 
-class Tweets(Base):
-    __tablename__ = 'tweets'
-    id = Column(Integer, primary_key=True)
-    tweet = Column(Text)
-    tokens = Column(Text)
-    user_name = Column(Text)
-    user_id = Column(Integer)
-    created = Column(Text, unique=True)
-    retweet = Column(Integer)
-    label = Column(Integer)
-
 class Root(object):
     __acl__ = [(Allow, Everyone, 'view'),
                (Allow, 'group:editors', 'edit')]
