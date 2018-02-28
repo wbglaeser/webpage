@@ -22,10 +22,6 @@ from .models import DBSession, SomeData, SomeData_2, Tweets
 class StartView:
     def __init__(self, request):
         self.request = request
-    
-    @view_config(route_name='start')
-    def home(self):
-        return {'name': 'Home View'}
 
 @view_defaults(renderer='html/home.pt')
 class HomeView:
@@ -34,13 +30,6 @@ class HomeView:
         self.logged_in = request.authenticated_userid
         self.load_data()
         self.load_data_2()
-
-    def __json__(self, request):
-        return {'x':self.x}
-
-    @view_config(route_name='home')
-    def hello(self):
-        return {"name": "hello"}
 
     @view_config(route_name='login', renderer='html/login.pt')
     def login(self):
