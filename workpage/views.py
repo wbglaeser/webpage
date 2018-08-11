@@ -1,6 +1,6 @@
-##############################
-### IMPORTS                ###
-##############################
+#----------------------------------------
+#IMPORTS                
+#----------------------------------------
 
 # EXTERNAL
 from pyramid.httpexceptions import HTTPFound
@@ -14,9 +14,9 @@ import transaction
 from .security import USERS, check_password
 from .models import DBSession, SomeData, SomeData_2, Tweets
 
-##############################
-### CODE                   ###
-##############################
+#----------------------------------------
+#CODE                   
+#----------------------------------------
 
 @view_defaults(renderer='html/start.pt')
 class StartView:
